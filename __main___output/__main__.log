@@ -1,0 +1,412 @@
+INFO|2019-03-03 10:44:57,923|pysph.solver.application|Running on ip-172-16-84-52 with address 172.16.84.52
+INFO|2019-03-03 10:44:57,942|pysph.solver.application|Generating output in /home/ec2-user/SageMaker/PySPH/__main___output
+INFO|2019-03-03 10:45:06,573|pysph.solver.application|No of particles:
+----------------------------------------------------------------------
+  fluid: 5025
+----------------------------------------------------------------------
+INFO|2019-03-03 10:45:06,573|pysph.solver.application|Using kernel:
+----------------------------------------------------------------------
+  CubicSpline(dim=2)
+----------------------------------------------------------------------
+INFO|2019-03-03 10:45:06,573|pysph.solver.application|Using nnps:
+----------------------------------------------------------------------
+  LinkedListNNPS(dim=2)
+----------------------------------------------------------------------
+INFO|2019-03-03 10:45:06,573|pysph.solver.application|Using integrator:
+----------------------------------------------------------------------
+  PECIntegrator(fluid=WCSPHStep())
+----------------------------------------------------------------------
+INFO|2019-03-03 10:45:06,574|pysph.solver.application|Using equations:
+----------------------------------------------------------------------
+[
+Group(equations=[
+TaitEOS(dest='fluid', sources=None, rho0=1.0, c0=1400.0, gamma=7.0, p0=0.0)
+    ],
+    real=False, update_nnps=False, iterate=False, max_iterations=1, min_iterations=0, pre=None, post=None),
+Group(equations=[
+ContinuityEquation(dest='fluid', sources=['fluid']),
+MomentumEquation(dest='fluid', sources=['fluid'], c0=1400.0, alpha=0.1, beta=0.0, gx=0.0, gy=0.0, gz=0.0, tensile_correction=False),
+XSPHCorrection(dest='fluid', sources=['fluid'], eps=0.5)
+    ],
+    real=True, update_nnps=False, iterate=False, max_iterations=1, min_iterations=0, pre=None, post=None)
+]
+----------------------------------------------------------------------
+INFO|2019-03-03 10:45:06,592|pysph.solver.application|started multiprocessing interface on ('0.0.0.0', 8800)
+INFO|2019-03-03 10:45:06,592|pysph.solver.application|Setup took: 8.67156 secs
+INFO|2019-03-03 10:45:06,594|pysph.solver.solver|Writing output at time 0, iteration 0, dt = 5e-06
+INFO|2019-03-03 10:45:07,827|pysph.solver.solver|Writing output at time 0.0005, iteration 100, dt = 5e-06
+INFO|2019-03-03 10:45:08,854|pysph.solver.solver|Writing output at time 0.001, iteration 200, dt = 5e-06
+INFO|2019-03-03 10:45:09,883|pysph.solver.solver|Writing output at time 0.0015, iteration 300, dt = 5e-06
+INFO|2019-03-03 10:45:10,952|pysph.solver.solver|Writing output at time 0.002, iteration 400, dt = 5e-06
+INFO|2019-03-03 10:45:11,961|pysph.solver.solver|Writing output at time 0.0025, iteration 500, dt = 5e-06
+INFO|2019-03-03 10:45:12,909|pysph.solver.solver|Writing output at time 0.003, iteration 600, dt = 5e-06
+INFO|2019-03-03 10:45:13,906|pysph.solver.solver|Writing output at time 0.0035, iteration 700, dt = 5e-06
+INFO|2019-03-03 10:45:14,918|pysph.solver.solver|Writing output at time 0.004, iteration 800, dt = 5e-06
+INFO|2019-03-03 10:45:15,960|pysph.solver.solver|Writing output at time 0.0045, iteration 900, dt = 5e-06
+INFO|2019-03-03 10:45:17,023|pysph.solver.solver|Writing output at time 0.005, iteration 1000, dt = 5e-06
+INFO|2019-03-03 10:45:18,103|pysph.solver.solver|Writing output at time 0.0055, iteration 1100, dt = 5e-06
+INFO|2019-03-03 10:45:19,180|pysph.solver.solver|Writing output at time 0.006, iteration 1200, dt = 5e-06
+INFO|2019-03-03 10:45:20,266|pysph.solver.solver|Writing output at time 0.0065, iteration 1300, dt = 5e-06
+INFO|2019-03-03 10:45:21,350|pysph.solver.solver|Writing output at time 0.007, iteration 1400, dt = 5e-06
+INFO|2019-03-03 10:45:22,440|pysph.solver.solver|Writing output at time 0.0075, iteration 1500, dt = 5e-06
+INFO|2019-03-03 10:45:22,706|pysph.solver.solver|Writing output at time 0.0076, iteration 1520, dt = 5e-06
+INFO|2019-03-03 10:45:22,753|pysph.solver.application|Run took: 16.16020 secs
+INFO|2019-03-03 10:46:48,050|pysph.solver.application|Running on ip-172-16-84-52 with address 172.16.84.52
+INFO|2019-03-03 10:46:48,065|pysph.solver.application|Generating output in /home/ec2-user/SageMaker/PySPH/__main___output
+INFO|2019-03-03 10:46:48,138|pysph.solver.application|No of particles:
+----------------------------------------------------------------------
+  fluid: 5025
+----------------------------------------------------------------------
+INFO|2019-03-03 10:46:48,139|pysph.solver.application|Using kernel:
+----------------------------------------------------------------------
+  CubicSpline(dim=2)
+----------------------------------------------------------------------
+INFO|2019-03-03 10:46:48,139|pysph.solver.application|Using nnps:
+----------------------------------------------------------------------
+  LinkedListNNPS(dim=2)
+----------------------------------------------------------------------
+INFO|2019-03-03 10:46:48,139|pysph.solver.application|Using integrator:
+----------------------------------------------------------------------
+  PECIntegrator(fluid=WCSPHStep())
+----------------------------------------------------------------------
+INFO|2019-03-03 10:46:48,139|pysph.solver.application|Using equations:
+----------------------------------------------------------------------
+[
+Group(equations=[
+TaitEOS(dest='fluid', sources=None, rho0=1.0, c0=1400.0, gamma=7.0, p0=0.0)
+    ],
+    real=False, update_nnps=False, iterate=False, max_iterations=1, min_iterations=0, pre=None, post=None),
+Group(equations=[
+ContinuityEquation(dest='fluid', sources=['fluid']),
+MomentumEquation(dest='fluid', sources=['fluid'], c0=1400.0, alpha=0.1, beta=0.0, gx=0.0, gy=0.0, gz=0.0, tensile_correction=False),
+XSPHCorrection(dest='fluid', sources=['fluid'], eps=0.5)
+    ],
+    real=True, update_nnps=False, iterate=False, max_iterations=1, min_iterations=0, pre=None, post=None)
+]
+----------------------------------------------------------------------
+INFO|2019-03-03 10:46:48,140|pysph.solver.application|started multiprocessing interface on ('0.0.0.0', 8801)
+INFO|2019-03-03 10:46:48,140|pysph.solver.application|Setup took: 0.09123 secs
+INFO|2019-03-03 10:46:48,142|pysph.solver.solver|Writing output at time 0, iteration 0, dt = 5e-06
+INFO|2019-03-03 10:46:49,152|pysph.solver.solver|Writing output at time 0.0005, iteration 100, dt = 5e-06
+INFO|2019-03-03 10:46:50,163|pysph.solver.solver|Writing output at time 0.001, iteration 200, dt = 5e-06
+INFO|2019-03-03 10:46:51,178|pysph.solver.solver|Writing output at time 0.0015, iteration 300, dt = 5e-06
+INFO|2019-03-03 10:49:28,398|pysph.solver.application|Running on ip-172-16-84-52 with address 172.16.84.52
+INFO|2019-03-03 10:49:28,538|pysph.solver.application|Generating output in /home/ec2-user/SageMaker/PySPH/__main___output
+INFO|2019-03-03 10:49:28,614|pysph.solver.application|No of particles:
+----------------------------------------------------------------------
+  fluid: 5025
+----------------------------------------------------------------------
+INFO|2019-03-03 10:49:28,615|pysph.solver.application|Using kernel:
+----------------------------------------------------------------------
+  CubicSpline(dim=2)
+----------------------------------------------------------------------
+INFO|2019-03-03 10:49:28,615|pysph.solver.application|Using nnps:
+----------------------------------------------------------------------
+  LinkedListNNPS(dim=2)
+----------------------------------------------------------------------
+INFO|2019-03-03 10:49:28,616|pysph.solver.application|Using integrator:
+----------------------------------------------------------------------
+  PECIntegrator(fluid=WCSPHStep())
+----------------------------------------------------------------------
+INFO|2019-03-03 10:49:28,616|pysph.solver.application|Using equations:
+----------------------------------------------------------------------
+[
+Group(equations=[
+TaitEOS(dest='fluid', sources=None, rho0=1.0, c0=1400.0, gamma=7.0, p0=0.0)
+    ],
+    real=False, update_nnps=False, iterate=False, max_iterations=1, min_iterations=0, pre=None, post=None),
+Group(equations=[
+ContinuityEquation(dest='fluid', sources=['fluid']),
+MomentumEquation(dest='fluid', sources=['fluid'], c0=1400.0, alpha=0.1, beta=0.0, gx=0.0, gy=0.0, gz=0.0, tensile_correction=False),
+XSPHCorrection(dest='fluid', sources=['fluid'], eps=0.5)
+    ],
+    real=True, update_nnps=False, iterate=False, max_iterations=1, min_iterations=0, pre=None, post=None)
+]
+----------------------------------------------------------------------
+INFO|2019-03-03 10:49:28,618|pysph.solver.application|started multiprocessing interface on ('0.0.0.0', 8800)
+INFO|2019-03-03 10:49:28,618|pysph.solver.application|Setup took: 0.22175 secs
+INFO|2019-03-03 10:49:28,620|pysph.solver.solver|Writing output at time 0, iteration 0, dt = 5e-06
+INFO|2019-03-03 10:49:29,639|pysph.solver.solver|Writing output at time 0.0005, iteration 100, dt = 5e-06
+INFO|2019-03-03 10:49:30,659|pysph.solver.solver|Writing output at time 0.001, iteration 200, dt = 5e-06
+INFO|2019-03-03 10:49:31,676|pysph.solver.solver|Writing output at time 0.0015, iteration 300, dt = 5e-06
+INFO|2019-03-03 10:49:32,729|pysph.solver.solver|Writing output at time 0.002, iteration 400, dt = 5e-06
+INFO|2019-03-03 10:49:33,725|pysph.solver.solver|Writing output at time 0.0025, iteration 500, dt = 5e-06
+INFO|2019-03-03 10:49:34,657|pysph.solver.solver|Writing output at time 0.003, iteration 600, dt = 5e-06
+INFO|2019-03-03 10:49:35,634|pysph.solver.solver|Writing output at time 0.0035, iteration 700, dt = 5e-06
+INFO|2019-03-03 10:49:36,626|pysph.solver.solver|Writing output at time 0.004, iteration 800, dt = 5e-06
+INFO|2019-03-03 10:49:37,636|pysph.solver.solver|Writing output at time 0.0045, iteration 900, dt = 5e-06
+INFO|2019-03-03 10:49:38,689|pysph.solver.solver|Writing output at time 0.005, iteration 1000, dt = 5e-06
+INFO|2019-03-03 10:49:39,754|pysph.solver.solver|Writing output at time 0.0055, iteration 1100, dt = 5e-06
+INFO|2019-03-03 10:49:40,827|pysph.solver.solver|Writing output at time 0.006, iteration 1200, dt = 5e-06
+INFO|2019-03-03 10:49:41,903|pysph.solver.solver|Writing output at time 0.0065, iteration 1300, dt = 5e-06
+INFO|2019-03-03 10:49:42,983|pysph.solver.solver|Writing output at time 0.007, iteration 1400, dt = 5e-06
+INFO|2019-03-03 10:49:44,065|pysph.solver.solver|Writing output at time 0.0075, iteration 1500, dt = 5e-06
+INFO|2019-03-03 10:49:44,330|pysph.solver.solver|Writing output at time 0.0076, iteration 1520, dt = 5e-06
+INFO|2019-03-03 10:49:44,377|pysph.solver.application|Run took: 15.75859 secs
+INFO|2019-03-03 10:50:04,256|pysph.solver.application|Running on ip-172-16-84-52 with address 172.16.84.52
+INFO|2019-03-03 10:50:04,392|pysph.solver.application|Generating output in /home/ec2-user/SageMaker/PySPH/__main___output
+INFO|2019-03-03 10:50:04,466|pysph.solver.application|No of particles:
+----------------------------------------------------------------------
+  fluid: 5025
+----------------------------------------------------------------------
+INFO|2019-03-03 10:50:04,467|pysph.solver.application|Using kernel:
+----------------------------------------------------------------------
+  CubicSpline(dim=2)
+----------------------------------------------------------------------
+INFO|2019-03-03 10:50:04,467|pysph.solver.application|Using nnps:
+----------------------------------------------------------------------
+  LinkedListNNPS(dim=2)
+----------------------------------------------------------------------
+INFO|2019-03-03 10:50:04,467|pysph.solver.application|Using integrator:
+----------------------------------------------------------------------
+  PECIntegrator(fluid=WCSPHStep())
+----------------------------------------------------------------------
+INFO|2019-03-03 10:50:04,467|pysph.solver.application|Using equations:
+----------------------------------------------------------------------
+[
+Group(equations=[
+TaitEOS(dest='fluid', sources=None, rho0=1.0, c0=1400.0, gamma=7.0, p0=0.0)
+    ],
+    real=False, update_nnps=False, iterate=False, max_iterations=1, min_iterations=0, pre=None, post=None),
+Group(equations=[
+ContinuityEquation(dest='fluid', sources=['fluid']),
+MomentumEquation(dest='fluid', sources=['fluid'], c0=1400.0, alpha=0.1, beta=0.0, gx=0.0, gy=0.0, gz=0.0, tensile_correction=False),
+XSPHCorrection(dest='fluid', sources=['fluid'], eps=0.5)
+    ],
+    real=True, update_nnps=False, iterate=False, max_iterations=1, min_iterations=0, pre=None, post=None)
+]
+----------------------------------------------------------------------
+INFO|2019-03-03 10:50:04,468|pysph.solver.application|started multiprocessing interface on ('0.0.0.0', 8800)
+INFO|2019-03-03 10:50:04,468|pysph.solver.application|Setup took: 0.21552 secs
+INFO|2019-03-03 10:50:04,473|pysph.solver.solver|Writing output at time 0, iteration 0, dt = 5e-06
+INFO|2019-03-03 10:50:05,474|pysph.solver.solver|Writing output at time 0.0005, iteration 100, dt = 5e-06
+INFO|2019-03-03 10:50:06,485|pysph.solver.solver|Writing output at time 0.001, iteration 200, dt = 5e-06
+INFO|2019-03-03 10:50:07,493|pysph.solver.solver|Writing output at time 0.0015, iteration 300, dt = 5e-06
+INFO|2019-03-03 10:50:08,552|pysph.solver.solver|Writing output at time 0.002, iteration 400, dt = 5e-06
+INFO|2019-03-03 10:50:09,550|pysph.solver.solver|Writing output at time 0.0025, iteration 500, dt = 5e-06
+INFO|2019-03-03 10:50:10,489|pysph.solver.solver|Writing output at time 0.003, iteration 600, dt = 5e-06
+INFO|2019-03-03 10:50:11,475|pysph.solver.solver|Writing output at time 0.0035, iteration 700, dt = 5e-06
+INFO|2019-03-03 10:50:12,474|pysph.solver.solver|Writing output at time 0.004, iteration 800, dt = 5e-06
+INFO|2019-03-03 10:50:13,490|pysph.solver.solver|Writing output at time 0.0045, iteration 900, dt = 5e-06
+INFO|2019-03-03 10:50:14,541|pysph.solver.solver|Writing output at time 0.005, iteration 1000, dt = 5e-06
+INFO|2019-03-03 10:50:15,601|pysph.solver.solver|Writing output at time 0.0055, iteration 1100, dt = 5e-06
+INFO|2019-03-03 10:50:16,669|pysph.solver.solver|Writing output at time 0.006, iteration 1200, dt = 5e-06
+INFO|2019-03-03 10:50:17,730|pysph.solver.solver|Writing output at time 0.0065, iteration 1300, dt = 5e-06
+INFO|2019-03-03 10:50:18,794|pysph.solver.solver|Writing output at time 0.007, iteration 1400, dt = 5e-06
+INFO|2019-03-03 10:50:19,882|pysph.solver.solver|Writing output at time 0.0075, iteration 1500, dt = 5e-06
+INFO|2019-03-03 10:50:20,144|pysph.solver.solver|Writing output at time 0.0076, iteration 1520, dt = 5e-06
+INFO|2019-03-03 10:50:20,193|pysph.solver.application|Run took: 15.72369 secs
+INFO|2019-03-03 10:56:21,676|pysph.solver.application|Running on ip-172-16-84-52 with address 172.16.84.52
+INFO|2019-03-03 10:56:21,812|pysph.solver.application|Generating output in /home/ec2-user/SageMaker/PySPH/__main___output
+INFO|2019-03-03 10:56:21,894|pysph.solver.application|No of particles:
+----------------------------------------------------------------------
+  fluid: 5025
+----------------------------------------------------------------------
+INFO|2019-03-03 10:56:21,895|pysph.solver.application|Using kernel:
+----------------------------------------------------------------------
+  CubicSpline(dim=2)
+----------------------------------------------------------------------
+INFO|2019-03-03 10:56:21,895|pysph.solver.application|Using nnps:
+----------------------------------------------------------------------
+  LinkedListNNPS(dim=2)
+----------------------------------------------------------------------
+INFO|2019-03-03 10:56:21,895|pysph.solver.application|Using integrator:
+----------------------------------------------------------------------
+  PECIntegrator(fluid=WCSPHStep())
+----------------------------------------------------------------------
+INFO|2019-03-03 10:56:21,895|pysph.solver.application|Using equations:
+----------------------------------------------------------------------
+[
+Group(equations=[
+TaitEOS(dest='fluid', sources=None, rho0=1.0, c0=1400.0, gamma=7.0, p0=0.0)
+    ],
+    real=False, update_nnps=False, iterate=False, max_iterations=1, min_iterations=0, pre=None, post=None),
+Group(equations=[
+ContinuityEquation(dest='fluid', sources=['fluid']),
+MomentumEquation(dest='fluid', sources=['fluid'], c0=1400.0, alpha=0.1, beta=0.0, gx=0.0, gy=0.0, gz=0.0, tensile_correction=False),
+XSPHCorrection(dest='fluid', sources=['fluid'], eps=0.5)
+    ],
+    real=True, update_nnps=False, iterate=False, max_iterations=1, min_iterations=0, pre=None, post=None)
+]
+----------------------------------------------------------------------
+INFO|2019-03-03 10:56:21,896|pysph.solver.application|started multiprocessing interface on ('0.0.0.0', 8801)
+INFO|2019-03-03 10:56:21,896|pysph.solver.application|Setup took: 0.22196 secs
+INFO|2019-03-03 10:56:21,898|pysph.solver.solver|Writing output at time 0, iteration 0, dt = 5e-06
+INFO|2019-03-03 10:56:22,901|pysph.solver.solver|Writing output at time 0.0005, iteration 100, dt = 5e-06
+INFO|2019-03-03 10:56:23,908|pysph.solver.solver|Writing output at time 0.001, iteration 200, dt = 5e-06
+INFO|2019-03-03 10:56:24,916|pysph.solver.solver|Writing output at time 0.0015, iteration 300, dt = 5e-06
+INFO|2019-03-03 10:56:25,967|pysph.solver.solver|Writing output at time 0.002, iteration 400, dt = 5e-06
+INFO|2019-03-03 10:56:26,960|pysph.solver.solver|Writing output at time 0.0025, iteration 500, dt = 5e-06
+INFO|2019-03-03 10:56:27,888|pysph.solver.solver|Writing output at time 0.003, iteration 600, dt = 5e-06
+INFO|2019-03-03 10:56:28,866|pysph.solver.solver|Writing output at time 0.0035, iteration 700, dt = 5e-06
+INFO|2019-03-03 10:56:29,868|pysph.solver.solver|Writing output at time 0.004, iteration 800, dt = 5e-06
+INFO|2019-03-03 10:56:30,874|pysph.solver.solver|Writing output at time 0.0045, iteration 900, dt = 5e-06
+INFO|2019-03-03 10:56:31,921|pysph.solver.solver|Writing output at time 0.005, iteration 1000, dt = 5e-06
+INFO|2019-03-03 10:56:32,984|pysph.solver.solver|Writing output at time 0.0055, iteration 1100, dt = 5e-06
+INFO|2019-03-03 10:56:34,046|pysph.solver.solver|Writing output at time 0.006, iteration 1200, dt = 5e-06
+INFO|2019-03-03 10:56:35,113|pysph.solver.solver|Writing output at time 0.0065, iteration 1300, dt = 5e-06
+INFO|2019-03-03 10:56:36,184|pysph.solver.solver|Writing output at time 0.007, iteration 1400, dt = 5e-06
+INFO|2019-03-03 10:56:37,260|pysph.solver.solver|Writing output at time 0.0075, iteration 1500, dt = 5e-06
+INFO|2019-03-03 10:56:37,519|pysph.solver.solver|Writing output at time 0.0076, iteration 1520, dt = 5e-06
+INFO|2019-03-03 10:56:37,571|pysph.solver.application|Run took: 15.67435 secs
+INFO|2019-03-03 10:56:41,320|pysph.solver.application|Running on ip-172-16-84-52 with address 172.16.84.52
+INFO|2019-03-03 10:56:41,345|pysph.solver.application|Generating output in /home/ec2-user/SageMaker/PySPH/__main___output
+INFO|2019-03-03 10:56:41,418|pysph.solver.application|No of particles:
+----------------------------------------------------------------------
+  fluid: 5025
+----------------------------------------------------------------------
+INFO|2019-03-03 10:56:41,418|pysph.solver.application|Using kernel:
+----------------------------------------------------------------------
+  CubicSpline(dim=2)
+----------------------------------------------------------------------
+INFO|2019-03-03 10:56:41,418|pysph.solver.application|Using nnps:
+----------------------------------------------------------------------
+  LinkedListNNPS(dim=2)
+----------------------------------------------------------------------
+INFO|2019-03-03 10:56:41,418|pysph.solver.application|Using integrator:
+----------------------------------------------------------------------
+  PECIntegrator(fluid=WCSPHStep())
+----------------------------------------------------------------------
+INFO|2019-03-03 10:56:41,418|pysph.solver.application|Using equations:
+----------------------------------------------------------------------
+[
+Group(equations=[
+TaitEOS(dest='fluid', sources=None, rho0=1.0, c0=1400.0, gamma=7.0, p0=0.0)
+    ],
+    real=False, update_nnps=False, iterate=False, max_iterations=1, min_iterations=0, pre=None, post=None),
+Group(equations=[
+ContinuityEquation(dest='fluid', sources=['fluid']),
+MomentumEquation(dest='fluid', sources=['fluid'], c0=1400.0, alpha=0.1, beta=0.0, gx=0.0, gy=0.0, gz=0.0, tensile_correction=False),
+XSPHCorrection(dest='fluid', sources=['fluid'], eps=0.5)
+    ],
+    real=True, update_nnps=False, iterate=False, max_iterations=1, min_iterations=0, pre=None, post=None)
+]
+----------------------------------------------------------------------
+INFO|2019-03-03 10:56:41,419|pysph.solver.application|started multiprocessing interface on ('0.0.0.0', 8800)
+INFO|2019-03-03 10:56:41,419|pysph.solver.application|Setup took: 0.10049 secs
+INFO|2019-03-03 10:56:41,421|pysph.solver.solver|Writing output at time 0, iteration 0, dt = 5e-06
+INFO|2019-03-03 10:56:42,445|pysph.solver.solver|Writing output at time 0.0005, iteration 100, dt = 5e-06
+INFO|2019-03-03 10:56:43,488|pysph.solver.solver|Writing output at time 0.001, iteration 200, dt = 5e-06
+INFO|2019-03-03 10:56:44,528|pysph.solver.solver|Writing output at time 0.0015, iteration 300, dt = 5e-06
+INFO|2019-03-03 10:56:45,612|pysph.solver.solver|Writing output at time 0.002, iteration 400, dt = 5e-06
+INFO|2019-03-03 10:56:46,633|pysph.solver.solver|Writing output at time 0.0025, iteration 500, dt = 5e-06
+INFO|2019-03-03 10:56:47,586|pysph.solver.solver|Writing output at time 0.003, iteration 600, dt = 5e-06
+INFO|2019-03-03 10:56:48,593|pysph.solver.solver|Writing output at time 0.0035, iteration 700, dt = 5e-06
+INFO|2019-03-03 10:56:49,627|pysph.solver.solver|Writing output at time 0.004, iteration 800, dt = 5e-06
+INFO|2019-03-03 10:56:50,663|pysph.solver.solver|Writing output at time 0.0045, iteration 900, dt = 5e-06
+INFO|2019-03-03 10:56:51,737|pysph.solver.solver|Writing output at time 0.005, iteration 1000, dt = 5e-06
+INFO|2019-03-03 10:56:52,834|pysph.solver.solver|Writing output at time 0.0055, iteration 1100, dt = 5e-06
+INFO|2019-03-03 10:56:53,926|pysph.solver.solver|Writing output at time 0.006, iteration 1200, dt = 5e-06
+INFO|2019-03-03 10:56:55,023|pysph.solver.solver|Writing output at time 0.0065, iteration 1300, dt = 5e-06
+INFO|2019-03-03 10:56:56,128|pysph.solver.solver|Writing output at time 0.007, iteration 1400, dt = 5e-06
+INFO|2019-03-03 10:56:57,253|pysph.solver.solver|Writing output at time 0.0075, iteration 1500, dt = 5e-06
+INFO|2019-03-03 10:56:57,534|pysph.solver.solver|Writing output at time 0.0076, iteration 1520, dt = 5e-06
+INFO|2019-03-03 10:56:57,600|pysph.solver.application|Run took: 16.17974 secs
+INFO|2019-03-03 11:00:57,306|pysph.solver.application|Running on ip-172-16-84-52 with address 172.16.84.52
+INFO|2019-03-03 11:00:57,317|pysph.solver.application|Generating output in /home/ec2-user/SageMaker/PySPH/__main___output
+INFO|2019-03-03 11:02:16,868|pysph.solver.application|Running on ip-172-16-84-52 with address 172.16.84.52
+INFO|2019-03-03 11:02:16,891|pysph.solver.application|Generating output in /home/ec2-user/SageMaker/PySPH/__main___output
+INFO|2019-03-03 11:02:16,968|pysph.solver.application|No of particles:
+----------------------------------------------------------------------
+  fluid: 5025
+----------------------------------------------------------------------
+INFO|2019-03-03 11:02:16,968|pysph.solver.application|Using kernel:
+----------------------------------------------------------------------
+  CubicSpline(dim=2)
+----------------------------------------------------------------------
+INFO|2019-03-03 11:02:16,968|pysph.solver.application|Using nnps:
+----------------------------------------------------------------------
+  LinkedListNNPS(dim=2)
+----------------------------------------------------------------------
+INFO|2019-03-03 11:02:16,969|pysph.solver.application|Using integrator:
+----------------------------------------------------------------------
+  PECIntegrator(fluid=WCSPHStep())
+----------------------------------------------------------------------
+INFO|2019-03-03 11:02:16,969|pysph.solver.application|Using equations:
+----------------------------------------------------------------------
+[
+Group(equations=[
+TaitEOS(dest='fluid', sources=None, rho0=1.0, c0=1400.0, gamma=7.0, p0=0.0)
+    ],
+    real=False, update_nnps=False, iterate=False, max_iterations=1, min_iterations=0, pre=None, post=None),
+Group(equations=[
+ContinuityEquation(dest='fluid', sources=['fluid']),
+MomentumEquation(dest='fluid', sources=['fluid'], c0=1400.0, alpha=0.1, beta=0.0, gx=0.0, gy=0.0, gz=0.0, tensile_correction=False),
+XSPHCorrection(dest='fluid', sources=['fluid'], eps=0.5)
+    ],
+    real=True, update_nnps=False, iterate=False, max_iterations=1, min_iterations=0, pre=None, post=None)
+]
+----------------------------------------------------------------------
+INFO|2019-03-03 11:02:16,969|pysph.solver.application|started multiprocessing interface on ('0.0.0.0', 8803)
+INFO|2019-03-03 11:02:16,970|pysph.solver.application|Setup took: 0.10402 secs
+INFO|2019-03-03 11:02:16,971|pysph.solver.solver|Writing output at time 0, iteration 0, dt = 5e-06
+INFO|2019-03-03 11:02:17,990|pysph.solver.solver|Writing output at time 0.0005, iteration 100, dt = 5e-06
+INFO|2019-03-03 11:02:19,018|pysph.solver.solver|Writing output at time 0.001, iteration 200, dt = 5e-06
+INFO|2019-03-03 11:02:20,056|pysph.solver.solver|Writing output at time 0.0015, iteration 300, dt = 5e-06
+INFO|2019-03-03 11:02:21,136|pysph.solver.solver|Writing output at time 0.002, iteration 400, dt = 5e-06
+INFO|2019-03-03 11:02:22,161|pysph.solver.solver|Writing output at time 0.0025, iteration 500, dt = 5e-06
+INFO|2019-03-03 11:02:23,124|pysph.solver.solver|Writing output at time 0.003, iteration 600, dt = 5e-06
+INFO|2019-03-03 11:02:24,135|pysph.solver.solver|Writing output at time 0.0035, iteration 700, dt = 5e-06
+INFO|2019-03-03 11:02:25,165|pysph.solver.solver|Writing output at time 0.004, iteration 800, dt = 5e-06
+INFO|2019-03-03 11:02:26,198|pysph.solver.solver|Writing output at time 0.0045, iteration 900, dt = 5e-06
+INFO|2019-03-03 11:02:27,266|pysph.solver.solver|Writing output at time 0.005, iteration 1000, dt = 5e-06
+INFO|2019-03-03 11:02:28,359|pysph.solver.solver|Writing output at time 0.0055, iteration 1100, dt = 5e-06
+INFO|2019-03-03 11:02:29,455|pysph.solver.solver|Writing output at time 0.006, iteration 1200, dt = 5e-06
+INFO|2019-03-03 11:02:30,556|pysph.solver.solver|Writing output at time 0.0065, iteration 1300, dt = 5e-06
+INFO|2019-03-03 11:02:31,652|pysph.solver.solver|Writing output at time 0.007, iteration 1400, dt = 5e-06
+INFO|2019-03-03 11:02:32,767|pysph.solver.solver|Writing output at time 0.0075, iteration 1500, dt = 5e-06
+INFO|2019-03-03 11:02:33,044|pysph.solver.solver|Writing output at time 0.0076, iteration 1520, dt = 5e-06
+INFO|2019-03-03 11:02:33,114|pysph.solver.application|Run took: 16.14372 secs
+INFO|2019-03-03 11:13:24,699|pysph.solver.application|Running on ip-172-16-84-52 with address 172.16.84.52
+INFO|2019-03-03 11:13:24,723|pysph.solver.application|Generating output in /home/ec2-user/SageMaker/PySPH/__main___output
+INFO|2019-03-03 11:13:24,798|pysph.solver.application|No of particles:
+----------------------------------------------------------------------
+  fluid: 5025
+----------------------------------------------------------------------
+INFO|2019-03-03 11:13:24,798|pysph.solver.application|Using kernel:
+----------------------------------------------------------------------
+  CubicSpline(dim=2)
+----------------------------------------------------------------------
+INFO|2019-03-03 11:13:24,798|pysph.solver.application|Using nnps:
+----------------------------------------------------------------------
+  LinkedListNNPS(dim=2)
+----------------------------------------------------------------------
+INFO|2019-03-03 11:13:24,798|pysph.solver.application|Using integrator:
+----------------------------------------------------------------------
+  PECIntegrator(fluid=WCSPHStep())
+----------------------------------------------------------------------
+INFO|2019-03-03 11:13:24,798|pysph.solver.application|Using equations:
+----------------------------------------------------------------------
+[
+Group(equations=[
+TaitEOS(dest='fluid', sources=None, rho0=1.0, c0=1400.0, gamma=7.0, p0=0.0)
+    ],
+    real=False, update_nnps=False, iterate=False, max_iterations=1, min_iterations=0, pre=None, post=None),
+Group(equations=[
+ContinuityEquation(dest='fluid', sources=['fluid']),
+MomentumEquation(dest='fluid', sources=['fluid'], c0=1400.0, alpha=0.1, beta=0.0, gx=0.0, gy=0.0, gz=0.0, tensile_correction=False),
+XSPHCorrection(dest='fluid', sources=['fluid'], eps=0.5)
+    ],
+    real=True, update_nnps=False, iterate=False, max_iterations=1, min_iterations=0, pre=None, post=None)
+]
+----------------------------------------------------------------------
+INFO|2019-03-03 11:13:24,799|pysph.solver.application|started multiprocessing interface on ('0.0.0.0', 8800)
+INFO|2019-03-03 11:13:24,799|pysph.solver.application|Setup took: 0.10446 secs
+INFO|2019-03-03 11:13:24,801|pysph.solver.solver|Writing output at time 0, iteration 0, dt = 5e-06
+INFO|2019-03-03 11:13:25,821|pysph.solver.solver|Writing output at time 0.0005, iteration 100, dt = 5e-06
+INFO|2019-03-03 11:13:26,864|pysph.solver.solver|Writing output at time 0.001, iteration 200, dt = 5e-06
+INFO|2019-03-03 11:13:27,911|pysph.solver.solver|Writing output at time 0.0015, iteration 300, dt = 5e-06
+INFO|2019-03-03 11:13:29,002|pysph.solver.solver|Writing output at time 0.002, iteration 400, dt = 5e-06
+INFO|2019-03-03 11:13:30,030|pysph.solver.solver|Writing output at time 0.0025, iteration 500, dt = 5e-06
+INFO|2019-03-03 11:13:30,997|pysph.solver.solver|Writing output at time 0.003, iteration 600, dt = 5e-06
+INFO|2019-03-03 11:13:32,015|pysph.solver.solver|Writing output at time 0.0035, iteration 700, dt = 5e-06
+INFO|2019-03-03 11:13:33,056|pysph.solver.solver|Writing output at time 0.004, iteration 800, dt = 5e-06
+INFO|2019-03-03 11:13:34,107|pysph.solver.solver|Writing output at time 0.0045, iteration 900, dt = 5e-06
+INFO|2019-03-03 11:13:35,189|pysph.solver.solver|Writing output at time 0.005, iteration 1000, dt = 5e-06
+INFO|2019-03-03 11:13:36,286|pysph.solver.solver|Writing output at time 0.0055, iteration 1100, dt = 5e-06
+INFO|2019-03-03 11:13:37,386|pysph.solver.solver|Writing output at time 0.006, iteration 1200, dt = 5e-06
+INFO|2019-03-03 11:13:38,487|pysph.solver.solver|Writing output at time 0.0065, iteration 1300, dt = 5e-06
+INFO|2019-03-03 11:13:39,587|pysph.solver.solver|Writing output at time 0.007, iteration 1400, dt = 5e-06
+INFO|2019-03-03 11:13:40,706|pysph.solver.solver|Writing output at time 0.0075, iteration 1500, dt = 5e-06
+INFO|2019-03-03 11:13:40,986|pysph.solver.solver|Writing output at time 0.0076, iteration 1520, dt = 5e-06
+INFO|2019-03-03 11:13:41,052|pysph.solver.application|Run took: 16.25209 secs

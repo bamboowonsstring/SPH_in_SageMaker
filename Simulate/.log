@@ -1,0 +1,53 @@
+INFO|2019-01-28 06:08:05,991|pysph.solver.application|Running on aws with address 172.17.0.6
+INFO|2019-01-28 06:08:06,005|pysph.solver.application|Generating output in /opt/ml/model/_output
+INFO|2019-01-28 06:08:10,459|pysph.solver.application|No of particles:
+----------------------------------------------------------------------
+  fluid: 5025
+----------------------------------------------------------------------
+INFO|2019-01-28 06:08:10,459|pysph.solver.application|Using kernel:
+----------------------------------------------------------------------
+  CubicSpline(dim=2)
+----------------------------------------------------------------------
+INFO|2019-01-28 06:08:10,459|pysph.solver.application|Using nnps:
+----------------------------------------------------------------------
+  LinkedListNNPS(dim=2)
+----------------------------------------------------------------------
+INFO|2019-01-28 06:08:10,460|pysph.solver.application|Using integrator:
+----------------------------------------------------------------------
+  PECIntegrator(fluid=WCSPHStep())
+----------------------------------------------------------------------
+INFO|2019-01-28 06:08:10,460|pysph.solver.application|Using equations:
+----------------------------------------------------------------------
+[
+Group(equations=[
+TaitEOS(dest='fluid', sources=None, rho0=1.0, c0=1400.0, gamma=7.0, p0=0.0)
+    ],
+    real=False, update_nnps=False, iterate=False, max_iterations=1, min_iterations=0, pre=None, post=None),
+Group(equations=[
+ContinuityEquation(dest='fluid', sources=['fluid']),
+MomentumEquation(dest='fluid', sources=['fluid'], c0=1400.0, alpha=0.1, beta=0.0, gx=0.0, gy=0.0, gz=0.0, tensile_correction=False),
+XSPHCorrection(dest='fluid', sources=['fluid'], eps=0.5)
+    ],
+    real=True, update_nnps=False, iterate=False, max_iterations=1, min_iterations=0, pre=None, post=None)
+]
+----------------------------------------------------------------------
+INFO|2019-01-28 06:08:10,482|pysph.solver.application|started multiprocessing interface on ('0.0.0.0', 8800)
+INFO|2019-01-28 06:08:10,482|pysph.solver.application|Setup took: 4.49206 secs
+INFO|2019-01-28 06:08:10,483|pysph.solver.solver|Writing output at time 0, iteration 0, dt = 5e-06
+INFO|2019-01-28 06:08:11,809|pysph.solver.solver|Writing output at time 0.0005, iteration 100, dt = 5e-06
+INFO|2019-01-28 06:08:12,517|pysph.solver.solver|Writing output at time 0.001, iteration 200, dt = 5e-06
+INFO|2019-01-28 06:08:13,226|pysph.solver.solver|Writing output at time 0.0015, iteration 300, dt = 5e-06
+INFO|2019-01-28 06:08:13,972|pysph.solver.solver|Writing output at time 0.002, iteration 400, dt = 5e-06
+INFO|2019-01-28 06:08:14,669|pysph.solver.solver|Writing output at time 0.0025, iteration 500, dt = 5e-06
+INFO|2019-01-28 06:08:15,318|pysph.solver.solver|Writing output at time 0.003, iteration 600, dt = 5e-06
+INFO|2019-01-28 06:08:16,006|pysph.solver.solver|Writing output at time 0.0035, iteration 700, dt = 5e-06
+INFO|2019-01-28 06:08:16,709|pysph.solver.solver|Writing output at time 0.004, iteration 800, dt = 5e-06
+INFO|2019-01-28 06:08:17,420|pysph.solver.solver|Writing output at time 0.0045, iteration 900, dt = 5e-06
+INFO|2019-01-28 06:08:18,157|pysph.solver.solver|Writing output at time 0.005, iteration 1000, dt = 5e-06
+INFO|2019-01-28 06:08:18,907|pysph.solver.solver|Writing output at time 0.0055, iteration 1100, dt = 5e-06
+INFO|2019-01-28 06:08:19,662|pysph.solver.solver|Writing output at time 0.006, iteration 1200, dt = 5e-06
+INFO|2019-01-28 06:08:20,415|pysph.solver.solver|Writing output at time 0.0065, iteration 1300, dt = 5e-06
+INFO|2019-01-28 06:08:21,174|pysph.solver.solver|Writing output at time 0.007, iteration 1400, dt = 5e-06
+INFO|2019-01-28 06:08:21,941|pysph.solver.solver|Writing output at time 0.0075, iteration 1500, dt = 5e-06
+INFO|2019-01-28 06:08:22,099|pysph.solver.solver|Writing output at time 0.0076, iteration 1520, dt = 5e-06
+INFO|2019-01-28 06:08:22,103|pysph.solver.application|Run took: 11.62067 secs
