@@ -1,0 +1,1 @@
+{"args": ["--openmp"], "completed": true, "output_dir": "/opt/ml/model/_output", "fname": "/opt/ml/model/", "cpu_time": 17.44499921798706}

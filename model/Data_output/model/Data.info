@@ -1,0 +1,1 @@
+{"fname": "model/Data", "output_dir": "/home/ec2-user/SageMaker/PySPH/model/Data_output", "args": ["-f", "/home/ec2-user/.local/share/jupyter/runtime/kernel-cb4c615b-a397-47e0-9204-9ea539a5cdb8.json"], "completed": true, "cpu_time": 35.69391441345215}

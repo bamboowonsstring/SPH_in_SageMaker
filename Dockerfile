@@ -9,27 +9,19 @@ MAINTAINER bamboowonsstring <extra.excramattion1@gmail.com>
 
 RUN apt-get -y update && apt-get install -y\
          wget \
-         python \
-         python-pip \
+         python3 \
+         python3-pip \
          ca-certificates \
-         python-dev 
-#    && rm -rf /var/lib/apt/lists/*
-# RUN wget https://bootstrap.pypa.io/ez_setup.py -O - | python3
-#R UN apt-get install libgomp1
-RUN apt-get install -y build-essential python-dev python-numpy \
-    python-mako cython python-pytest mayavi2 python-virtualenv
-#RUN apt-get install nvidia-modprobe
-#RUN pip install pocl
-#RUN apt-get install opencl-headers
+         python3-dev 
+RUN apt-get install -y build-essential 
+RUN apt-get install -y python3-numpy
+RUN apt-get install -y python3-pytest 
+RUN apt-get install -y cython3
 
 #For pysph
-RUN pip install pytools
-RUN pip install numpy-stl
-#for pyopencl
-#RUN apt-get install libnuma1
-#RUN pip install pybind11 
-#RUN pip install pyopencl
-RUN pip install PySPH
+RUN pip3 install pytools
+RUN pip3 install h5py
+RUN pip3 install pysph
 
 ENV PYTHONUNBUFFERED=TRUE
 ENV PYTHONDONTWRITEBYTECODE=TRUE
